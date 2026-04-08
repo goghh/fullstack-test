@@ -1,0 +1,34 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.comment-card {
+    border-left: 4px solid #007bff;
+    transition: box-shadow .2s;
+}
+
+.comment-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+}
+
+.sort-btn.active {
+    font-weight: 700;
+}
+
+.sort-direction-icon {
+    font-size: .8rem;
+}
+
+#loading-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, .6);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading-overlay.show {
+    display: flex;
+}
